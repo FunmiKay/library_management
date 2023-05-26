@@ -2,7 +2,7 @@
  "actions": [],
  "allow_rename": 1,
  "autoname": "LM.#####",
- "creation": "2023-05-25 15:23:44.598470",
+ "creation": "2023-05-26 07:16:41.326741",
  "default_view": "List",
  "doctype": "DocType",
  "editable_grid": 1,
@@ -12,7 +12,8 @@
   "last_name",
   "full_name",
   "email_address",
-  "phone"
+  "phone",
+  "amended_from"
  ],
  "fields": [
   {
@@ -30,7 +31,7 @@
   {
    "fieldname": "full_name",
    "fieldtype": "Data",
-   "label": "Full name",
+   "label": "Full Name",
    "read_only": 1
   },
   {
@@ -44,15 +45,25 @@
    "fieldtype": "Data",
    "label": "Phone",
    "options": "Phone"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Library Member",
+   "print_hide": 1,
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2023-05-25 15:24:38.429607",
+ "modified": "2023-05-26 16:30:48.740027",
  "modified_by": "Administrator",
  "module": "Library Management",
- "name": "Library Management",
- "naming_rule": "Expression (old style)",
+ "name": "Library Member",
+ "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
@@ -68,6 +79,7 @@
    "write": 1
   }
  ],
+ "quick_entry": 1,
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": [],
